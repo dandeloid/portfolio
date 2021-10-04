@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 .header-section {
@@ -9,27 +10,46 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 520px;
   width: auto;
   color: white;
 }
 .title {
   position: absolute;
-  top: 60px;
-  left: 30px;
+  top: 221px;
+  left: 24px;
 }
-.navbar {
+.portrait {
+  border-radius: 100%;
+  border: 1px solid white;
+  width: 180px;
   position: absolute;
-  top: 380px;
+  top: 356px;
+  right: 24px;
+}
+.main-navbar-logos {
+  position: absolute;
+  top: 80px;
   right: 30px;
 }
 a {
   text-decoration: none;
 }
 
+.tech-head,
+.projects-head,
+.about-code-head,
+.skills-head,
+.for-more-head {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  background-color: dodgerblue;
+  margin: 25px;
+}
+
 .presentation-section {
   background-color: lightyellow;
-  padding: 20px;
+  padding: 49px 24px 43px 24px;
   text-align: center;
 }
 
