@@ -58,7 +58,7 @@ a {
 .more-code-head,
 .contact-head {
   font-family: "Montserrat", sans-serif;
-  margin: 20px;
+  text-align: center;
 }
 .list-head {
   color: dodgerblue;
@@ -75,9 +75,13 @@ a {
 .presentation-text,
 .tech-text,
 .project-text {
+  text-align: left;
   margin: 0 auto;
-  width: 327px;
+  width: 330px;
   margin-bottom: 10px;
+}
+.tech-text {
+  text-align: center;
 }
 
 .tech-section {
@@ -85,11 +89,16 @@ a {
   padding: 20px;
   text-align: center;
 }
-
 .project-section {
   background-color: lightyellow;
   padding: 20px;
   text-align: center;
+}
+.projects,
+.other-projects {
+  width: 330px;
+  margin: 0 auto;
+  text-align: left;
 }
 .project-image {
   position: relative;
@@ -109,7 +118,7 @@ a {
   font-size: 9px;
   line-height: 11px;
   padding: 5px 10px;
-  margin: 0 15px 10px 15px;
+  margin: 0 10px 20px 0;
 }
 .code-section {
   background-color: lightskyblue;
