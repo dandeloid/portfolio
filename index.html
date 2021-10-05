@@ -13,8 +13,8 @@
 <!-- header section   --> 
 <header class="header-section">
 
-    <!-- introduction section -->
-    <section class="title">
+    <!-- head title section -->
+    <section class="title" tabindex="0">
         <h1 class="portfolio-text">PORTFOLIO: Daniel Vestin</h1>
         <h1 class="career-text">Frontend Developer</h1>
     </section>
@@ -24,44 +24,80 @@
     <!-- links to linkedin/github/stack -->
     <nav class="main-navbar-logos">
         <a href="https://www.linkedin.com/in/daniel-vestin-986a64220/">
-            <img alt=" Daniel LinkedIn link" src="./linkedin.svg">
+            <img alt="Daniel LinkedIn" src="./linkedin.svg">
         </a>
         <a href="https://github.com/dandeloid">
-            <img alt="Daniel GitHub link" src="./github.svg">
+            <img alt="Daniel GitHub" src="./github.svg">
         </a>
         <a href="https://stackoverflow.com/users/16671053/dandeloid">
-            <img alt="Daniel Stack Overflow link" src="./stackOverflow.svg">
+            <img alt="Daniel Stack Overflow" src="./stackOverflow.svg">
         </a>
     </nav>
 
 </header>
 
 <!-- presentation section -->
-<article class="presentation-section">
-    <p class="presentation-text">
+<section class="presentation-section" tabindex="0">
+    <article class="presentation-text">
+        <img class="line-dot-icon" src="./start-figure.svg" alt="line and dot icon"/>
         Hi! I'm Daniel, currently studying to become a frontend developer at technigo. Got a background in economics and design. Aspiring to become a fullstack developer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae natus placeat culpa recusandae? Dicta dolores quae assumenda accusamus tempora saepe.
-    </p>
-</article>
+    </article>
+</section>
 
 <!-- tech section -->
-<section class="tech-section">
+<section class="tech-section" tabindex="0">
     <h2 class="tech-head">TECH</h2>
     <p class="tech-text">HTML, CSS, Flexbox, Grid, JavaScript, ES6, Node.js, Web Accessibly, API:s, mob-programming, pair-programming, GitHub</p>
 </section>
 
 <!-- project section -->
-<section class="project-section">
+<section class="project-section" tabindex="0">
     <h2 class="projects-head">FEATURED PROJECTS</h2>
-    <div class="featured-project">Project 1</div>
-    <div class="featured-project">Project 2</div>
-    <div class="featured-project">Project 3</div>
-    <div class="featured-project">Project 4</div>
+    <div class="projects">
+        <div class="featured-project">
+            <div class="project-image">
+                <img alt="Project 1" src="https://picsum.photos/330/220">
+                <h3 class="project-title-overlay">Project 1</h3>
+            </div>
+            <h3 class="project-title">Project 1</h3>
+            <p class="project-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis esse voluptate explicabo molestiae architecto ipsa.</p>
+            <p class="code-tag">HTML</p><p class="code-tag">CSS</p><p class="code-tag">JavaScript</p>
+        </div>
+        <div class="featured-project">
+            <div class="project-image">
+                <img alt="Project 2" src="https://picsum.photos/330/220">
+                <h3 class="project-title-overlay">Project 2</h3>
+            </div>
+            <h3 class="project-title">Project 2</h3>
+            <p class="project-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis esse voluptate explicabo molestiae architecto ipsa.</p>
+            <p class="code-tag">HTML</p><p class="code-tag">CSS</p><p class="code-tag">JavaScript</p>
+        </div>
+        <div class="featured-project">
+            <div class="project-image">
+                <img alt="Project 3" src="https://picsum.photos/330/220">
+                <h3 class="project-title-overlay">Project 3</h3>
+            </div>
+            <h3 class="project-title">Project 3</h3>
+            <p class="project-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis esse voluptate explicabo molestiae architecto ipsa.</p>
+            <p class="code-tag">HTML</p><p class="code-tag">CSS</p><p class="code-tag">JavaScript</p>
+        </div>
+        <div class="featured-project">
+            <div class="project-image">
+                <img alt="Project 4" src="https://picsum.photos/330/220">
+                <h3 class="project-title-overlay">Project 4</h3>
+            </div>
+            <h3 class="project-title">Project 4</h3>
+            <p class="project-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis esse voluptate explicabo molestiae architecto ipsa.</p>
+            <p class="code-tag">HTML</p><p class="code-tag">CSS</p><p class="code-tag">JavaScript</p>
+        </div>
+    </div>
     <h3 class="other-projects-head">OTHER PROJECTS</h3>
-    <div class="other-projects">bla bla bla</div>
+        <div class="other-projects">bla bla bla</div>
+        <div class="other-projects">pla pla pla</div>
 </section>
 
 <!-- code section -->
-<section class="code-section">
+<section class="code-section" tabindex="0">
     <h2 class="about-code-head">ABOUT CODE</h2>
     <div class="about-code">Code is like modern day magic</div>
     <div class="about-code">Fun stuff,... and also frustrating</div>
@@ -70,13 +106,38 @@
 </section>
 
 <!-- skill section -->
-<section class="skill-section">
+<section class="skill-section" tabindex="0">
     <h2 class="skills-head">SKILLS</h2>
-    <p class="skills">Here's my skills, if you don't like em I got others</p>
+    <section class="skill-list">
+        <ul class="code-skills">
+            <li class="list-head">CODE</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <ul class="toolbox-skills">
+            <li class="list-head">TOOLBOX</li>
+            <li>Visual Studio Code</li>
+            <li>Adobe Suite</li>
+            <li>Slack</li>
+        </ul>
+        <ul class="more-skills">
+            <li class="list-head">MORE</li>
+            <li>Agile methodology</li>
+            <li>Teamplayer</li>
+            <li>Design skills</li>
+        </ul>
+        <ul class="upcoming-skills">
+            <li class="list-head">UPCOMING</li>
+            <li>React</li>
+            <li>Redux</li>
+            <li>Mongo DB</li>
+        </ul>
+    </section>
 </section>
 
 <!-- for more section-->
-<section class="for-more-section">
+<section class="for-more-section" tabindex="0">
     <h2 class="for-more-head">FOR MORE</h2>
     <nav class="nav-logos">
         <a href="https://www.linkedin.com/in/daniel-vestin-986a64220/">
@@ -92,7 +153,7 @@
 </section>
 
 <!-- footer section aka contact -->
-<footer class="footer-contact">
+<footer class="footer-contact" tabindex="0">
     <h3 class="contact-head">CONTACT</h3>
     <p class="contact-name">Daniel Vestin</p>
     <p class="contact-number">+46123456789</p>
