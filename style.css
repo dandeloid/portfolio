@@ -178,6 +178,16 @@ footer {
 
 /* Desktop */
 @media (min-width: 992px) {
+  .hero-content {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .presentation-text,
+  .tech-text {
+    max-width: 1100px;
+  }
+
   .skill-list {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: none;
@@ -188,7 +198,7 @@ footer {
     justify-items: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 20px;
+    grid-column-gap: 50px;
   }
   .project-image-container,
   .thoughts-image-container {
