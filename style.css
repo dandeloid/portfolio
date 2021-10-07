@@ -76,7 +76,8 @@ a {
 }
 .presentation-text,
 .tech-text,
-.project-text {
+.project-text,
+.thoughts-text {
   text-align: left;
   margin: 0 auto;
   max-width: 330px;
@@ -96,20 +97,27 @@ a {
   text-align: center;
 }
 .projects,
-.other-projects {
+.other-projects,
+.thoughts {
   max-width: 330px;
   margin: 0 auto;
   text-align: left;
 }
-.project-image-container {
+.project-image-container,
+.thoughts-image-container {
   position: relative;
   color: white;
 }
-.project-image {
+.project-image,
+.thoughts-image {
   max-width: 100%;
   height: auto;
 }
-.project-title-overlay {
+.project-title {
+  color: #fa382f;
+}
+.project-title-overlay,
+.thoughts-title-overlay {
   font-size: 28px;
   background-color: #fa382f;
   padding: 10px;
@@ -174,18 +182,21 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: none;
   }
-  .projects {
+  .projects,
+  .thoughts {
     max-width: 1100px;
     justify-items: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
   }
-  .project-image-container {
+  .project-image-container,
+  .thoughts-image-container {
     position: relative;
     max-width: 530px;
   }
-  .project-text {
+  .project-text,
+  .thoughts-text {
     max-width: 530px;
   }
 }
