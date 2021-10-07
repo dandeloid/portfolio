@@ -21,10 +21,10 @@
   left: 24px;
 }
 .portfolio-text {
-  font-size: 1.2rem;
+  font-size: 1.2rem; /* Check pixel instead */
 }
 .career-text {
-  font-size: 2rem;
+  font-size: 2rem; /* Check pixel instead */
 }
 .portrait {
   border-radius: 100%;
@@ -79,7 +79,7 @@ a {
 .project-text {
   text-align: left;
   margin: 0 auto;
-  width: 330px;
+  max-width: 330px;
   margin-bottom: 10px;
 }
 .tech-text {
@@ -97,7 +97,7 @@ a {
 }
 .projects,
 .other-projects {
-  width: 330px;
+  max-width: 330px;
   margin: 0 auto;
   text-align: left;
 }
@@ -106,7 +106,8 @@ a {
   color: white;
 }
 .project-image {
-  width: 330px;
+  max-width: 100%;
+  height: auto;
 }
 .project-title-overlay {
   font-size: 28px;
@@ -116,6 +117,9 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.red-text {
+  color: #fa382f;
 }
 .code-tag {
   display: inline-block;
@@ -160,26 +164,28 @@ footer {
   line-height: 47px;
 }
 
-/* Tablet+Desktop */
+/* Tablet*/
+@media (min-width: 768px) {
+}
+
+/* Desktop */
 @media (min-width: 992px) {
   .skill-list {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: none;
   }
   .projects {
-    width: 100%;
+    max-width: 1100px;
     justify-items: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
   }
   .project-image-container {
     position: relative;
-    color: white;
-  }
-  .project-image {
-    width: 530px;
+    max-width: 530px;
   }
   .project-text {
-    width: 530px;
+    max-width: 530px;
   }
 }
