@@ -7,18 +7,19 @@
     <title>Portfolio</title>
     <link rel="icon" href="./assets/start-figure.svg"/>
     <link rel="stylesheet" href="./style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     
 <!-- header section   --> 
 <header class="header-section">
 
-    <section class="hero-content">
+    <div class="container">
         <!-- head title section -->
         <div class="title" tabindex="0">
-            <h1 class="portfolio-text">PORTFOLIO: Daniel Vestin</h1>
-            <h1 class="career-text">Frontend Developer</h1>
+            <h1 class="portfolio-text">PORTFOLIO: <b>DANIEL VESTIN</b></h1>
+            <h1 class="career-text">Frontend</h1>
+            <h1 class="career-text">Developer</h1>
         </div>
 
         <img class="portrait" alt="Photo of Daniel" src="./assets/me.jpg">
@@ -26,178 +27,222 @@
         <!-- links to linkedin/github/stack -->
         <nav class="main-navbar-logos">
             <a href="https://www.linkedin.com/in/daniel-vestin-986a64220/">
-                <img alt="Daniel LinkedIn" src="./assets/linkedin.svg">
+                <img class ="top-logo" alt="Daniel LinkedIn" src="./assets/linkedin.svg">
             </a>
             <a href="https://github.com/dandeloid">
-                <img alt="Daniel GitHub" src="./assets/github.svg">
+                <img class ="top-logo" alt="Daniel GitHub" src="./assets/github.svg">
             </a>
             <a href="https://stackoverflow.com/users/16671053/dandeloid">
-                <img alt="Daniel Stack Overflow" src="./assets/stackOverflow.svg">
+                <img class ="top-logo" alt="Daniel Stack Overflow" src="./assets/stackOverflow.svg">
             </a>
         </nav>
-    </section>
+    </div>
 
 </header>
 
 <!-- presentation section -->
 <section class="presentation-section" tabindex="0">
-    <article class="presentation-text">
-        <img class="line-dot-icon" src="./assets/start-figure.svg" alt="line and dot icon"/>
-        Hi! I'm Daniel, currently studying to become a frontend developer at technigo. Got a background in economics and design. Aspiring to become a fullstack developer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae natus placeat culpa recusandae? Dicta dolores quae assumenda accusamus tempora saepe.
-    </article>
+    <div class="container">
+        <article class="presentation-text">
+            <img class="line-dot-icon" src="./assets/start-figure.svg" alt="line and dot icon"/>
+            Hi! I'm Daniel, currently studying to become a frontend developer at technigo. Got a background in economics and design. Aspiring to become a fullstack developer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae natus placeat culpa recusandae? Dicta dolores quae assumenda accusamus tempora saepe.
+        </article>
+    </div>
 </section>
 
 <!-- tech section -->
 <section class="tech-section" tabindex="0">
-    <h2 class="tech-head">TECH</h2>
-    <p class="tech-text">HTML, CSS, Flexbox, Grid, JavaScript, ES6, Node.js, Web Accessibly, API:s, mob-programming, pair-programming, GitHub</p>
+    <div class="container">
+        <div class="title-head">
+            <h2 class="tech-head">TECH</h2>
+        </div>
+        <p class="tech-text">HTML, CSS, Flexbox, Grid, JavaScript, ES6, Node.js, Web Accessibly, API:s, mob-programming, pair-programming, GitHub</p>
+    </div>
 </section>
 
 <!-- project section -->
 <section class="project-section" tabindex="0">
-    <h2 class="projects-head">FEATURED PROJECTS</h2>
-    <div class="projects">
-        <div class="featured-project">
-            <div class="project-image-container">
-                <img class="project-image" alt="GitHub Tracker" src="./assets/github-tracker.png">
-                <h3 class="project-title-overlay">GitHub Tracker</h3>
+    <div class="container">
+        <div class="title-head">
+            <h2 class="projects-head">FEATURED PROJECTS</h2>
+        </div>
+        <div class="projects">
+            <div class="featured-project">
+                <a href="https://quizzical-fermi-01d0aa.netlify.app/">
+                <div class="project-image-container">
+                    <img class="project-image" alt="GitHub Tracker" src="./assets/github-tracker.png">
+                    <h3 class="project-title-overlay">GitHub Tracker</h3>
+                </div>
+                <h3 class="project-title">GitHub Tracker</h3>
+                <p class="project-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis esse voluptate explicabo molestiae architecto ipsa.</p>
+                </a>
+                <p class="code-tag">HTML</p><p class="code-tag">CSS</p><p class="code-tag">JavaScript</p>
             </div>
-            <h3 class="project-title">GitHub Tracker</h3>
-            <p class="project-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis esse voluptate explicabo molestiae architecto ipsa.</p>
-            <p class="code-tag">HTML</p><p class="code-tag">CSS</p><p class="code-tag">JavaScript</p>
-        </div>
-        <div class="featured-project">
-            <div class="project-image-container">
-                <img class="project-image" alt="Weather App" src="./assets/weather-app.png">
-                <h3 class="project-title-overlay">Weather App</h3>
+            <div class="featured-project">
+                <a href="https://weather-app-by-team-fox.netlify.app/">
+                <div class="project-image-container">
+                    <img class="project-image" alt="Weather App" src="./assets/weather-app.png">
+                    <h3 class="project-title-overlay">Weather App</h3>
+                </div>
+                <h3 class="project-title">Weather App</h3>
+                </a>
+                <p class="project-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis esse voluptate explicabo molestiae architecto ipsa.</p>
+                <p class="code-tag">HTML</p><p class="code-tag">CSS</p><p class="code-tag">JavaScript</p>
             </div>
-            <h3 class="project-title">Weather App</h3>
-            <p class="project-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis esse voluptate explicabo molestiae architecto ipsa.</p>
-            <p class="code-tag">HTML</p><p class="code-tag">CSS</p><p class="code-tag">JavaScript</p>
-        </div>
-        <div class="featured-project">
-            <div class="project-image-container">
-                <img class="project-image" alt="Guess Who" src="./assets/guess-who.png">
-                <h3 class="project-title-overlay">Guess Who</h3>
+            <div class="featured-project">
+                <a href="https://gracious-hopper-441c8c.netlify.app/">
+                <div class="project-image-container">
+                    <img class="project-image" alt="Guess Who" src="./assets/guess-who.png">
+                    <h3 class="project-title-overlay">Guess Who</h3>
+                </div>
+                <h3 class="project-title">Guess Who</h3>
+                <p class="project-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis esse voluptate explicabo molestiae architecto ipsa.</p>
+                </a>
+                <p class="code-tag">HTML</p><p class="code-tag">CSS</p><p class="code-tag">JavaScript</p>
             </div>
-            <h3 class="project-title">Guess Who</h3>
-            <p class="project-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis esse voluptate explicabo molestiae architecto ipsa.</p>
-            <p class="code-tag">HTML</p><p class="code-tag">CSS</p><p class="code-tag">JavaScript</p>
-        </div>
-        <div class="featured-project">
-            <div class="project-image-container">
-                <img class="project-image" alt="Chat Bot" src="./assets/bar-bot.png">
-                <h3 class="project-title-overlay">Chat Bot</h3>
+            <div class="featured-project">
+                <a href="https://blissful-jackson-e60904.netlify.app/">
+                <div class="project-image-container">
+                    <img class="project-image" alt="Chat Bot" src="./assets/bar-bot.png">
+                    <h3 class="project-title-overlay">Chat Bot</h3>
+                </div>
+                <h3 class="project-title">Chat Bot</h3>
+                <p class="project-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis esse voluptate explicabo molestiae architecto ipsa.</p>
+                </a>
+                <p class="code-tag">HTML</p><p class="code-tag">CSS</p><p class="code-tag">JavaScript</p>
             </div>
-            <h3 class="project-title">Chat Bot</h3>
-            <p class="project-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis esse voluptate explicabo molestiae architecto ipsa.</p>
-            <p class="code-tag">HTML</p><p class="code-tag">CSS</p><p class="code-tag">JavaScript</p>
         </div>
-    </div>
-    <div class="other-projects">
-        <h3 class="other-projects-head">OTHER PROJECTS</h3>
-        <div class="other-project">
-            <span class="red-text">BUSINESS SITE:</span> 
-            Site built with a hero header, forms and accordion 
-            <span class="red-text">>></span>
+        <div class="other-projects">
+            <h3 class="other-projects-head">OTHER PROJECTS</h3>
+            <div class="other-project">
+                <span class="red-text">BUSINESS SITE:</span> 
+                Site built with a hero header, forms and accordion 
+                <span class="red-text">>></span>
+            </div>
+            <p class="code-tag">HTML</p><p class="code-tag">CSS</p>
+            <div class="other-project">
+                <span class="red-text">NEWS SITE:</span> 
+                Site built with a grid and flexbox. 
+                <span class="red-text">>></span>
+            </div>        
+            <p class="code-tag">HTML</p><p class="code-tag">CSS</p>
         </div>
-        <p class="code-tag">HTML</p><p class="code-tag">CSS</p>
-        <div class="other-project">
-            <span class="red-text">NEWS SITE:</span> 
-            Site built with a grid and flexbox. 
-            <span class="red-text">>></span>
-        </div>        
-        <p class="code-tag">HTML</p><p class="code-tag">CSS</p>
     </div>
 </section>
 
-<!-- about code section -->
-<section class="code-section" tabindex="0">
-    <h2 class="about-code-head">MY THOUGHTS ABOUT CODE</h2>
-    <div class="thoughts">
-        <div class="featured-thoughts">
-            <div class="thoughts-image-container">
-                <img class="thoughts-image" alt="Magic Code" src="./assets/code1.jpeg">
-                <h3 class="thoughts-title-overlay">Magic</h3>
-            </div>
-            <p><span class="red-text"> 2021 October 1</span></p>
-            <h3 class="thoughts-title">Code is like modern magic</h3>
-            <p class="thoughts-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis esse voluptate explicabo molestiae architecto ipsa.</p>
+<!-- my thoughts section -->
+<section class="thoughts-section" tabindex="0">
+    <div class="container">
+        <div class="title-head">
+            <h2 class="my-thoughts-head">MY THOUGHTS</h2>
         </div>
-        <div class="featured-thoughts">
-            <div class="thoughts-image-container">
-                <img class="thoughts-image" alt="Love Code" src="./assets/code2.jpeg">
-                <h3 class="thoughts-title-overlay">Love</h3>
+        <div class="thoughts">
+            <div class="featured-thoughts">
+                <div class="thoughts-image-container">
+                    <img class="thoughts-image" alt="Magic Code" src="./assets/code1.jpeg">
+                    <h3 class="thoughts-title-overlay">Magic</h3>
+                </div>
+                <p class="thoughts-date"> 2021 October 1</p>
+                <h3 class="thoughts-title">Code is like modern magic</h3>
+                <p class="thoughts-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis esse voluptate explicabo molestiae architecto ipsa.</p>
             </div>
-            <p><span class="red-text"> 2021 October 7</span></p>
-            <h3 class="thoughts-title">Code is love</h3>
-            <p class="thoughts-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis esse voluptate explicabo molestiae architecto ipsa.</p>
+            <div class="featured-thoughts">
+                <div class="thoughts-image-container">
+                    <img class="thoughts-image" alt="Love Code" src="./assets/code2.jpeg">
+                    <h3 class="thoughts-title-overlay">Love</h3>
+                </div>
+                <p class="thoughts-date"> 2021 October 7</p>
+                <h3 class="thoughts-title">Code is love</h3>
+                <p class="thoughts-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis esse voluptate explicabo molestiae architecto ipsa.</p>
+            </div>
+        </div>
+
+        <div class="more-thoughts">
+            <h3 class="more-thoughts-head">MORE THOUGTHS</h3>
+            <div class="other-thoughts">
+                <p class="thoughts-date">2021 September 11:</p> 
+                <p class="other-thoughts-text">Lorem ipsum dolor sit amet consectetur <span class="red-text">>></span></p>
+            </div>
+            <div class="other-thoughts">
+                <p class="thoughts-date">2021 August 3:</p> 
+                <p class="other-thoughts-text">Lorem ipsum dolor sit amet consectetur adipisicing<span class="red-text">>></span></p>
+            </div>        
         </div>
     </div>
-
-    <h3 class="more-code-head">MORE THOUGHS</h3>
-    <div class="more-about-code"> Even more</div>
 </section>
 
 <!-- skill section -->
 <section class="skill-section" tabindex="0">
-    <h2 class="skills-head">SKILLS</h2>
-    <section class="skill-list">
-        <ul class="code-skills">
-            <li class="list-head">CODE</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-        <ul class="toolbox-skills">
-            <li class="list-head">TOOLBOX</li>
-            <li>Visual Studio Code</li>
-            <li>Adobe Suite</li>
-            <li>Slack</li>
-        </ul>
-        <ul class="more-skills">
-            <li class="list-head">MORE</li>
-            <li>Agile methodology</li>
-            <li>Teamplayer</li>
-            <li>Design skills</li>
-        </ul>
-        <ul class="upcoming-skills">
-            <li class="list-head">UPCOMING</li>
-            <li>React</li>
-            <li>Redux</li>
-            <li>Mongo DB</li>
-        </ul>
-    </section>
+    <div class="container">
+        <div class="title-head">
+            <h2 class="skills-head">SKILLS</h2>
+        </div>
+        <div class="skill-list">
+            <ul class="code-skills">
+                <li class="list-head">CODE</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <ul class="toolbox-skills">
+                <li class="list-head">TOOLBOX</li>
+                <li>Visual Studio Code</li>
+                <li>Adobe Suite</li>
+                <li>Slack</li>
+            </ul>
+            <ul class="more-skills">
+                <li class="list-head">MORE</li>
+                <li>Agile methodology</li>
+                <li>Teamplayer</li>
+                <li>Design skills</li>
+            </ul>
+            <ul class="upcoming-skills">
+                <li class="list-head">UPCOMING</li>
+                <li>React</li>
+                <li>Redux</li>
+                <li>Mongo DB</li>
+            </ul>
+        </div>
+    </div>
 </section>
 
 <!-- for more section-->
 <section class="for-more-section" tabindex="0">
-    <h2 class="for-more-head">FOR MORE</h2>
-    <nav class="nav-logos">
-        <div class="logo">
-            <a href="https://www.linkedin.com/in/daniel-vestin-986a64220/">
-                <img alt=" Daniel LinkedIn" src="./assets/linkedin-red.svg">
-            </a>
+    <div class="container">
+        <div class="title-head">
+            <h2 class="for-more-head">FOR MORE</h2>
         </div>
-        <div class="logo">
-            <a href="https://github.com/dandeloid">
-                <img alt="Daniel GitHub" src="./assets/github-red.svg">
-            </a>
-        </div>
-        <div class="logo">
-            <a href="https://stackoverflow.com/users/16671053/dandeloid">
-                <img alt="Daniel Stack Overflow" src="./assets/stackOverflow-red.svg">
-            </a>
-        </div>
-    </nav>
+        <nav class="nav-logos">
+            <div class="logo">
+                <a href="https://www.linkedin.com/in/daniel-vestin-986a64220/">
+                    <img class="logo-image" alt=" Daniel LinkedIn" src="./assets/linkedin-red.svg">
+                    <p class="logo-text">LINKEDIN</p>
+                </a>
+            </div>
+            <div class="logo">
+                <a href="https://stackoverflow.com/users/16671053/dandeloid">
+                    <img class="logo-image" alt="Daniel Stack Overflow" src="./assets/stackOverflow-red.svg">
+                    <p class="logo-text">STACK OVERFLOW</p>
+                </a>
+            </div>
+            <div class="logo">
+                <a href="https://github.com/dandeloid">
+                    <img class="logo-image" alt="Daniel GitHub" src="./assets/github-red.svg">
+                    <p class="logo-text">GITHUB</p>
+                </a>
+            </div>
+        </nav>
+    </div>
 </section>
 
 <!-- footer section aka contact -->
 <footer class="footer-contact" tabindex="0">
-    <h3 class="contact-head">CONTACT</h3>
-    <p class="contact-name">Daniel Vestin</p>
-    <p class="contact-number">+46123456789</p>
-    <p class="contact-email">email@email.com</p>
+    <div class="container">
+        <h3 class="contact-head">CONTACT</h3>
+        <p class="contact-name">Daniel Vestin</p>
+        <p class="contact-number">+46123456789</p>
+        <p class="contact-email">email@email.com</p>
+    </div>
 </footer>
 
 </body>

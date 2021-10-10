@@ -2,10 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  line-height: 29px;
 }
 
+section:nth-child(2n) {
+  background-color: #f4f4f4;
+}
+/* ----- Container ----- */
+.container {
+  position: relative;
+  max-width: 330px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* -----Header----- */
 .header-section {
   background-image: url(./assets/bg-pencilz.jpeg);
   background-repeat: no-repeat;
@@ -13,112 +23,105 @@
   background-position: bottom;
   height: 520px;
   width: auto;
-  color: white;
 }
 .title {
   position: absolute;
-  top: 221px;
-  left: 24px;
+  top: 200px;
+  left: 0px;
 }
 .portfolio-text {
-  font-size: 1.2rem; /* Check pixel instead */
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
 }
 .career-text {
-  font-size: 2rem; /* Check pixel instead */
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 30px;
 }
 .portrait {
-  border-radius: 100%;
-  border: 1px solid white;
-  width: 180px;
   position: absolute;
-  top: 356px;
-  right: 24px;
+  border-radius: 100%;
+  border: 2px solid white;
+  width: 180px;
+  top: 350px;
+  right: 0px;
 }
 .main-navbar-logos {
   position: absolute;
   top: 80px;
-  right: 30px;
+  right: 0px;
+}
+.top-logo {
+  max-width: 40px;
 }
 a {
   text-decoration: none;
+  color: black;
 }
 
-.tech-head,
-.projects-head,
-.about-code-head,
-.skills-head,
-.for-more-head {
-  font-family: "Montserrat", sans-serif;
-  display: inline-block;
-  background-color: #fa382f;
-  color: white;
-  padding: 3px 5px;
-  margin: 25px;
-}
-.other-projects-head,
-.more-code-head,
-.contact-head {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  color: #fa382f;
-}
-.list-head {
-  color: #fa382f;
-}
-
-.presentation-section {
-  background-color: #f4f4f4;
-  padding: 49px 24px 43px 24px;
-}
+/* ----- Presentation ----- */
 .line-dot-icon {
   height: 11px;
   margin-right: 5px;
 }
-.presentation-text,
-.tech-text,
-.project-text,
-.thoughts-text {
+.presentation-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 29px;
   text-align: left;
-  margin: 0 auto;
-  max-width: 330px;
-  margin-bottom: 10px;
+}
+
+/* ----- Tech ----- */
+.title-head {
+  display: flex;
+  justify-content: center;
+}
+.tech-head {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  background-color: #fa382f;
+  color: white;
+  padding: 3px 5px;
+  margin: 30px 0;
 }
 .tech-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 29px;
   text-align: center;
 }
 
-.tech-section {
-  padding: 20px;
-  text-align: center;
+/* ----- Projects ----- */
+.projects-head {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  background-color: #fa382f;
+  color: white;
+  padding: 3px 5px;
+  margin: 30px 0;
 }
-.project-section {
-  background-color: #f4f4f4;
-  padding: 20px;
-  text-align: center;
-}
-.projects,
-.other-projects,
-.thoughts {
-  max-width: 330px;
-  margin: 0 auto;
-  text-align: left;
-}
-.project-image-container,
-.thoughts-image-container {
+.project-image-container {
   position: relative;
   color: white;
 }
-.project-image,
-.thoughts-image {
+.project-image {
   max-width: 100%;
   height: auto;
 }
-.project-title {
-  color: #fa382f;
-}
-.project-title-overlay,
-.thoughts-title-overlay {
+.project-title-overlay {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700px;
   font-size: 28px;
+  line-height: 34px;
   background-color: #fa382f;
   padding: 10px;
   position: absolute;
@@ -126,87 +129,259 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.red-text {
+.project-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 29px;
   color: #fa382f;
+}
+.project-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  text-align: left;
+  margin-bottom: 10px;
 }
 .code-tag {
   display: inline-block;
-  background-color: lightpink;
+  font-family: "Roboto", sans-serif;
   font-size: 9px;
-  line-height: 11px;
+  font-weight: 400;
+  background-color: lightpink;
   padding: 5px 10px;
-  margin: 0 10px 20px 0;
+  margin: 0 10px 40px 0;
 }
-.code-section {
-  padding: 20px;
+.other-projects-head {
+  font-family: "Montserrat", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
   text-align: center;
+  color: #fa382f;
+  padding: 30px;
+}
+.other-projects {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}
+.red-text {
+  color: #fa382f;
 }
 
-.skill-section {
-  background-color: #f4f4f4;
-  padding: 20px;
+/* ----- My Thoughts ----- */
+.my-thoughts-head {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  background-color: #fa382f;
+  color: white;
+  padding: 3px 5px;
+  margin: 30px 0;
+}
+.thoughts-image-container {
+  position: relative;
+  color: white;
+}
+.thoughts-image {
+  max-width: 100%;
+  height: auto;
+}
+.thoughts-title-overlay {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700px;
+  font-size: 28px;
+  line-height: 34px;
+  background-color: #fa382f;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.thoughts-date {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: red;
+  margin-top: 20px;
+}
+.thoughts-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+}
+.thoughts-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.more-thoughts-head {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
   text-align: center;
+  color: #fa382f;
+  padding: 30px;
+}
+.other-thoughts-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 29px;
+}
+
+/* ----- Skills ----- */
+.skills-head {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  background-color: #fa382f;
+  color: white;
+  padding: 3px 5px;
+  margin: 30px 0;
+}
+.list-head {
+  color: #fa382f;
+}
+ul {
+  list-style-type: none;
 }
 .skill-list {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-row-gap: 20px;
 }
-ul {
-  list-style-type: none;
-}
 
-.for-more-section {
-  padding: 20px;
-  text-align: center;
+/* ----- For More ----- */
+.for-more-head {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  background-color: #fa382f;
+  color: white;
+  padding: 3px 5px;
+  margin: 30px 0;
+}
+.nav-logos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .logo {
-  display: inline;
+  text-align: center;
   margin: 20px;
 }
-footer {
-  background-color: #f4f4f4;
-  padding: 20px;
+.logo-image {
+  max-width: 60px;
+}
+.logo-text {
+  color: #fa382f;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  margin-bottom: 20px;
+}
+
+/* ----- Contact footer ----- */
+.footer-contact {
+  background-color: #072bce;
+  color: white;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 40px;
+  padding: 50px;
+}
+.contact-head {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 38px;
   line-height: 47px;
 }
 
 /* Tablet*/
 @media (min-width: 768px) {
+  .container {
+    max-width: 660px;
+  }
 }
 
-/* Desktop */
+/* -----Desktop----- */
 @media (min-width: 992px) {
-  .hero-content {
-    position: relative;
+  .container {
     max-width: 1100px;
-    margin: 0 auto;
   }
-  .presentation-text,
+
+  /* ---Header--- */
+  .top-logo {
+    max-width: 80px;
+  }
+  .portrait {
+    width: 333px;
+    top: 200px;
+    right: 0px;
+  }
+  .portfolio-text {
+    font-size: 22px;
+    line-height: 50px;
+  }
+  .career-text {
+    font-size: 58px;
+    line-height: 70px;
+  }
+
+  /* ---Presentation--- */
+  .presentation-text {
+    max-width: 1100px;
+  }
+  .line-dot-icon {
+    height: 20px;
+  }
+
+  /* ---Tech--- */
   .tech-text {
     max-width: 1100px;
   }
 
-  .skill-list {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: none;
-  }
-  .projects,
-  .thoughts {
-    max-width: 1100px;
+  /* ---Projects--- */
+  .projects {
     justify-items: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 50px;
   }
-  .project-image-container,
-  .thoughts-image-container {
-    position: relative;
-    max-width: 530px;
+
+  /* ---Thoughts--- */
+  .thoughts {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
   }
-  .project-text,
-  .thoughts-text {
-    max-width: 530px;
+
+  /*   ---Skill--- */
+  .skill-list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: none;
+  }
+
+  /* ---Contact--- */
+  .logo-image {
+    max-width: 160px;
+  }
+  .logo-text {
+    font-size: 25px;
+    margin-top: 20px;
   }
 }
