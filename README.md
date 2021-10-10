@@ -1,9 +1,13 @@
 # portfolio
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Project making a Portfolio page with HTML, CSS & accessibility in mind.
 
-The problem
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+## The problem
 
-View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Had a premade design to follow for the layout of the page. Did the layout after the design with what I've learned so far. Tried the screenreader to navigate through the page and also tested it on chrome, firefox, edge & safari.
+After a while the CSS became a bit tangled so remade the structure making it easier to follow.
+If I had more time I would've wanted to implement even more for accessibility, try out the og:tags and deploy it on a custom domain...
+
+## View it live
+
+https://vigilant-lamport-e20467.netlify.app/
