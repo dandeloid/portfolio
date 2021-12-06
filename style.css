@@ -17,7 +17,7 @@ section:nth-child(2n) {
 
 /* -----Header----- */
 .header-section {
-  background-image: url(./assets/bg-pencilz.jpeg);
+  background-image: url(./assets/bg3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -30,11 +30,15 @@ section:nth-child(2n) {
   left: 0px;
 }
 .portfolio-text {
-  color: white;
+  color: #fa382f;
   font-family: "Roboto", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 30px;
+  text-shadow: 1px 1px black;
+}
+.name {
+  color: white;
 }
 .career-text {
   color: white;
@@ -42,6 +46,7 @@ section:nth-child(2n) {
   font-size: 32px;
   font-weight: 700;
   line-height: 30px;
+  text-shadow: 1px 1px black;
 }
 .portrait {
   position: absolute;
@@ -174,6 +179,12 @@ a {
 }
 
 /* ----- My Thoughts ----- */
+
+/* Remove .thoughts here when more thoughts is added and open up media query Grid down below again */
+.thoughts {
+  max-width: 600px;
+  margin: 20px auto;
+}
 .my-thoughts-head {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -206,7 +217,7 @@ a {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 17px;
-  color: red;
+  color: #fa382f;
   margin: 20px 0 10px 0;
 }
 .thoughts-title {
@@ -369,12 +380,12 @@ ul {
   }
 
   /* ---Thoughts--- */
-  .thoughts {
+  /*   .thoughts {
     justify-items: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 50px;
-  }
+  } */
 
   /*   ---Skill--- */
   .skill-list {
